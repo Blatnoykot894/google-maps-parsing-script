@@ -40,7 +40,7 @@ async def scrape_hotels_page(browser, url, search_name):
 
     card_links = feed.locator("a.hfpxzc")
     count = await card_links.count()
-    print(f"[{search_name}] placec founded: {count}")
+    print(f"[{search_name}] places founded: {count}")
     
     cards = await card_links.all()
     if count == 0:
